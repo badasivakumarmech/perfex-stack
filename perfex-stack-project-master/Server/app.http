@@ -1,0 +1,41 @@
+GET http://localhost:4010/
+###
+POST http://localhost:4010/UserRegister
+Content-Type: application/json
+
+{
+    "UserEmail": "siva@gmail.com", 
+    "UserPassword": "Siva@123"
+}
+###
+POST http://localhost:4010/Userlogin
+Content-Type: application/json
+
+
+{
+      "UserEmail":"siva@gmail.com",
+       "UserPassword":"Siva@123"
+}
+###
+POST http://localhost:4010/AddInstitute
+Content-Type: application/json
+
+{
+     
+    "InstituteName": "kumar",
+    "HeadName": "Kumarsai",
+    "PrimaryEmail": "kishore@gmail.com",
+    "PrimaryContactNumber": "9658745874",
+    "SecondaryEmail": "siva@gmail.com",
+    "SecondaryContactNumber": "8547854785",
+    "Address": "Guntur",
+    "City": "Guntur",
+    "InstituteCode": "2569",
+    "InstituteType": "College",
+    "AxiosPlans": "LMS",
+    "Password": "Muni@1234"
+}
+###
+GET http://localhost:4010/allAddInstitutes
+###
+DELETE http://localhost:4010/deleteInstitute/:"652eba4c027cd12213328dfa"
